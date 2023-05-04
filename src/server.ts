@@ -15,6 +15,6 @@ app.use(routes);
 
 Headers;
 
-app.listen(3333, () => {
+app.listen(process.env.PORT || 3333, () => {
   console.log("Servidor rodando na porta 3333");
 });
